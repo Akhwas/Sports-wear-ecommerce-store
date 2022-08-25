@@ -81,47 +81,43 @@ p {
   display: flex;
 }
 
-.categories {
-  margin: 70px 0px;
-}
-.categories .small-container {
+.small-container, .brands, .testimonial, .categories {
   max-width: 1080px;
-  display: flex;
-  margin: auto;
   padding-left: 25px;
   padding-right: 25px;
 }
-.categories .small-container .row2 {
+.small-container .row2, .brands .row2, .testimonial .row2, .categories .row2 {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
+  flex-direction: row;
+  margin: 40px;
 }
-.categories .small-container .col-3 {
+.small-container .row2 .col-3, .brands .row2 .col-3, .testimonial .row2 .col-3, .categories .row2 .col-3 {
   flex-basis: 30%;
-  min-width: 250px;
+  display: inline-block;
   height: auto;
   margin-bottom: 30px;
 }
-.categories .small-container .col-3 img {
+
+.categories img {
   width: 100%;
   height: 100%;
 }
 
-.small-container {
+.small-container, .brands, .testimonial, .categories {
   max-width: 1080px;
   padding-left: 25px;
   padding-right: 25px;
   margin: auto;
 }
-.small-container .title {
+.small-container .title, .brands .title, .testimonial .title, .categories .title {
   margin: 0 auto 80px;
   text-align: center;
   line-height: 60px;
   position: relative;
   color: #555;
 }
-.small-container .title::after {
+.small-container .title::after, .brands .title::after, .testimonial .title::after, .categories .title::after {
   width: 80px;
   content: "";
   background: #ff523b;
@@ -132,20 +128,20 @@ p {
   transform: translateX(-50%);
   left: 50%;
 }
-.small-container .row {
+.small-container .row, .brands .row, .testimonial .row, .categories .row {
   display: flex;
   justify-content: space-between;
 }
-.small-container .row .col-4 {
+.small-container .row .col-4, .brands .row .col-4, .testimonial .row .col-4, .categories .row .col-4 {
   flex-basis: 22%;
   margin-right: 2px;
   margin-left: 2px;
   margin-bottom: 50px;
 }
-.small-container .row .col-4 img {
+.small-container .row .col-4 img, .brands .row .col-4 img, .testimonial .row .col-4 img, .categories .row .col-4 img {
   width: 100%;
 }
-.small-container .row .col-4 p {
+.small-container .row .col-4 p, .brands .row .col-4 p, .testimonial .row .col-4 p, .categories .row .col-4 p {
   font-size: 14px;
 }
 
@@ -165,4 +161,110 @@ h4 {
 
 .col-4 :not(hover) {
   transition: transform 0.5s;
+}
+
+.offer {
+  background: radial-gradient(#fff, #ffd6d6);
+  margin-top: 80px;
+  padding: 0 30px;
+}
+
+.row .col-2 .offer-img {
+  box-sizing: border-box;
+  padding: 100px 150px;
+}
+
+small {
+  color: #555;
+}
+
+a {
+  text-transform: capitalize;
+}
+
+.testimonial {
+  padding-top: 100px;
+  text-align: center;
+  transition: transform 1s;
+}
+.testimonial .row2 {
+  transition: transform 1s;
+}
+.testimonial .row2 :hover {
+  transform: translateY(-5%);
+}
+.testimonial .row2 :not(hover) {
+  transition: transform 0.5s;
+}
+.testimonial .row2 .col-3 {
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.testimonial .fa-quote-left {
+  font-size: 34px;
+  color: #ff523b;
+}
+.testimonial img {
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.testimonial p {
+  font-size: 12px;
+  margin: 12px 0;
+  color: #777;
+}
+.testimonial h3 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #555;
+}
+
+.brands {
+  margin: 100px auto;
+}
+.brands img {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.brands img:hover {
+  filter: grayscale(0);
+}
+
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 30px 0 20px;
+}
+.footer p {
+  color: #8a8a8a;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer .col-1, .footer .col-2, .footer .col-3, .footer .col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer .col-1 {
+  flex-basis: 30%;
+}
+.footer .col-2 {
+  flex: 1;
+  text-align: center;
+}
+.footer .col-2 img {
+  width: 180px;
+  margin-top: 10px;
+  max-height: 100%;
+}
+.footer .col-2 .col-3, .footer .col-2 .col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+.footer .col-2 .col-3 ul, .footer .col-2 .col-4 ul {
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */
