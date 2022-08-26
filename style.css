@@ -236,21 +236,21 @@ a {
   background: #000;
   color: #8a8a8a;
   font-size: 14px;
-  padding: 30px 0 20px;
 }
 .footer p {
   color: #8a8a8a;
 }
 .footer h3 {
   color: #fff;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .footer .col-1, .footer .col-2, .footer .col-3, .footer .col-4 {
   min-width: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .footer .col-1 {
   flex-basis: 30%;
+  width: 240px;
 }
 .footer .col-2 {
   flex: 1;
@@ -258,13 +258,82 @@ a {
 }
 .footer .col-2 img {
   width: 180px;
-  margin-top: 10px;
   max-height: 100%;
+  padding: 0;
 }
-.footer .col-2 .col-3, .footer .col-2 .col-4 {
+.footer .col-3, .footer .col-4 {
   flex-basis: 12%;
   text-align: center;
 }
-.footer .col-2 .col-3 ul, .footer .col-2 .col-4 ul {
+.footer .col-3 ul, .footer .col-4 ul {
   list-style-type: none;
+}
+.footer hr {
+  background: #b5b5b5;
+  border: none;
+  height: 1px;
+  margin: 20px 50px;
+}
+.footer .copyright {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.app-logo {
+  margin-top: 20px;
+}
+.app-logo img {
+  width: 140px;
+}
+
+.menu-icon {
+  margin-left: 20px;
+  width: 28px;
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu-icon {
+    display: block;
+  }
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul a {
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .small-container, .categories, .testimonial, .brands {
+    text-align: center;
+  }
+  .small-container .row, .categories .row, .testimonial .row, .brands .row, .small-container .row2, .categories .row2, .testimonial .row2, .brands .row2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .small-container .row .col-1, .categories .row .col-1, .testimonial .row .col-1, .brands .row .col-1, .small-container .row .col-2, .categories .row .col-2, .testimonial .row .col-2, .brands .row .col-2, .small-container .row .col-3, .categories .row .col-3, .testimonial .row .col-3, .brands .row .col-3, .small-container .row .col-4, .categories .row .col-4, .testimonial .row .col-4, .brands .row .col-4, .small-container .row2 .col-1, .categories .row2 .col-1, .testimonial .row2 .col-1, .brands .row2 .col-1, .small-container .row2 .col-2, .categories .row2 .col-2, .testimonial .row2 .col-2, .brands .row2 .col-2, .small-container .row2 .col-3, .categories .row2 .col-3, .testimonial .row2 .col-3, .brands .row2 .col-3, .small-container .row2 .col-4, .categories .row2 .col-4, .testimonial .row2 .col-4, .brands .row2 .col-4 {
+    flex-basis: 100%;
+  }
+  .small-container .row .col-1 .offer-img, .categories .row .col-1 .offer-img, .testimonial .row .col-1 .offer-img, .brands .row .col-1 .offer-img, .small-container .row .col-2 .offer-img, .categories .row .col-2 .offer-img, .testimonial .row .col-2 .offer-img, .brands .row .col-2 .offer-img, .small-container .row .col-3 .offer-img, .categories .row .col-3 .offer-img, .testimonial .row .col-3 .offer-img, .brands .row .col-3 .offer-img, .small-container .row .col-4 .offer-img, .categories .row .col-4 .offer-img, .testimonial .row .col-4 .offer-img, .brands .row .col-4 .offer-img, .small-container .row2 .col-1 .offer-img, .categories .row2 .col-1 .offer-img, .testimonial .row2 .col-1 .offer-img, .brands .row2 .col-1 .offer-img, .small-container .row2 .col-2 .offer-img, .categories .row2 .col-2 .offer-img, .testimonial .row2 .col-2 .offer-img, .brands .row2 .col-2 .offer-img, .small-container .row2 .col-3 .offer-img, .categories .row2 .col-3 .offer-img, .testimonial .row2 .col-3 .offer-img, .brands .row2 .col-3 .offer-img, .small-container .row2 .col-4 .offer-img, .categories .row2 .col-4 .offer-img, .testimonial .row2 .col-4 .offer-img, .brands .row2 .col-4 .offer-img {
+    padding: 0;
+  }
+  .testimonial .row2 {
+    margin: 20px 0;
+  }
+  .testimonial .row2 .col-3 {
+    margin: 20px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
